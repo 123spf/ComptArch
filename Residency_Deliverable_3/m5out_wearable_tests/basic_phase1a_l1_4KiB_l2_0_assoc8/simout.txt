@@ -1,0 +1,34 @@
+Global frequency set at 1000000000000 ticks per second
+Redirecting stdout to m5out_wearable_tests/basic_phase1a_l1_4KiB_l2_0_assoc8/simout.txt
+Redirecting stderr to m5out_wearable_tests/basic_phase1a_l1_4KiB_l2_0_assoc8/simerr.txt
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.3
+gem5 compiled May 28 2025 19:43:09
+gem5 started Jun 12 2025 02:24:53
+gem5 executing on gem5_dev, pid 88
+command line: build/ALL/gem5.opt -re --outdir=m5out_wearable_tests/basic_phase1a_l1_4KiB_l2_0_assoc8 configs/learning_gem5/residency/arm_iotbench.py --binary=configs/learning_gem5/IoTBench/iotbench-ARM-basic --clk_freq=64MHz --voltage=0.9V --l1i_size=4KiB --l1d_size=4KiB --l2_size=0 --l1i_assoc=8 --l1d_assoc=8
+
+Beginning simulation for: configs/learning_gem5/IoTBench/iotbench-ARM-basic
+L1I: size=4KiB assoc=8
+L1D: size=4KiB assoc=8
+L2:  Disabled
+Cache block size=64
+--------------------------------------------------------------
+DataSize/Bytes:
+18432
+DataDim:
+1
+DataType:
+INT_TYPE
+TotalTicks/Ticks:
+89453
+TotalTime/Secs:
+0.089453
+Iterations:
+10
+Iterations/Secs:
+111.790550
+--------------------------------------------------------------
+Exiting @ tick 94150109375 because exiting with last active thread context
