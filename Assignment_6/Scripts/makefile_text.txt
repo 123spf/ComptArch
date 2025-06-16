@@ -1,0 +1,23 @@
+# Makefile for compiling the multi-threaded daxpy kernel
+
+# --- Configuration ---
+
+GEM5_DIR = ../../../../gem5
+
+# Use the cross-compiler
+CXX = aarch64-linux-gnu-g++
+
+# --- Compiler and Linker Flags ---
+CXXFLAGS = -I$(GEM5_DIR)/include -O2 -static
+LDFLAGS = -L$(GEM5_DIR)/util/m5/build/arm64/out -lm5 -lpthread
+
+# --- Target ---
+TARGET = multithread_daxpy
+
+all: $(TARGET)
+
+$(TARGET): multithread_daxpy.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
+
+clean:
+	rm -f $(TARGET)
